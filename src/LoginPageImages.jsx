@@ -1,4 +1,5 @@
 import loginPageBackground from "./assets/sellby-background.png";
+import appIcon from "./assets/app-icon.png";
 import "./LoginPageImages.css";
 function LoginPageImages() {
   return (
@@ -8,6 +9,10 @@ function LoginPageImages() {
         alt="Sellby Background"
         className="login-page-background"
       />
+      <div className="app-icon-container">
+        <img className="app-emoji" src={appIcon} alt="app icon" />
+        <p className="app-title">Campus market place for acadamic Essentials</p>
+      </div>
     </div>
   );
 }
