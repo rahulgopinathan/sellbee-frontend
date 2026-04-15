@@ -30,3 +30,8 @@
   width: auto;
   font-size: 22px;
 }
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 18px;
+  }
+}
