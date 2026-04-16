@@ -1,5 +1,5 @@
-import loginPageBackground from "./assets/sellby-background.png";
-import appIcon from "./assets/app-icon.png";
+import loginPageBackground from "../../assets/sellby-background.png";
+import appIcon from "../../assets/app-icon.png";
 import "./LoginPageImages.css";
 function LoginPageImages() {
   return (
