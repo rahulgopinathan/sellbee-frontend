@@ -1,6 +1,7 @@
 import "./LoginForm.css";
 import { useState } from "react";
 import axios from "axios";
+import SellByTextIcon from "../../shared/sellby-text-icon/SellbyTextIcon";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -16,10 +17,7 @@ function LoginForm() {
 
   return (
     <div className="login-form-container">
-      <div className="app-icon">
-        <p className="sellby-text">Sellby</p>
-        <p className="sellby-mu-text">MU</p>
-      </div>
+      <SellByTextIcon />
 
       <div className="user-creds">
         <input
