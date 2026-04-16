@@ -1,0 +1,15 @@
+.login-page-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+/* This is for every direct child */
+.login-page-container > * {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .login-page-container .login-page-images {
+    display: none;
+  }
+}

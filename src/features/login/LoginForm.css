@@ -1,0 +1,95 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.sellby-text {
+  color: black;
+}
+.sellby-mu-text {
+  color: rgb(230, 105, 16);
+}
+.sellby-mu-text,
+.sellby-text {
+  font-size: 45px;
+  font-family: Teachers, sans-serif;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
+.app-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.user-creds {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.password-input {
+  margin-bottom: 10px;
+}
+.user-email-input,
+.user-password-input {
+  height: 40px;
+  border: none;
+  background-color: RGB(253, 248, 242);
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  font-weight: 400;
+  width: 350px;
+}
+
+.user-password-input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(230, 105, 16);
+}
+.user-email-input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(230, 105, 16);
+}
+.user-password-input {
+  margin-bottom: 20px;
+}
+.login-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 38px;
+  background-color: rgb(230, 105, 16);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+  font-weight: 500;
+  font-family: Poppins;
+  border: none;
+  font-size: 18px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease opacity 0.3s ease;
+}
+.login-btn:hover {
+  background-color: rgb(230, 105, 16);
+  color: grey;
+}
+.login-btn:active {
+  background-color: rgb(230, 105, 16);
+  color: white;
+  opacity: 0.8;
+}
+.terms-and-condtions-link {
+  padding-top: 15px;
+  color: grey;
+  transition: color 0.3s ease;
+}
+.terms-and-condtions-link:hover {
+  color: black;
+}
