@@ -1,0 +1,20 @@
+.app-icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sellby-text {
+  color: black;
+}
+.sellby-mu-text {
+  color: rgb(230, 105, 16);
+}
+.sellby-mu-text,
+.sellby-text {
+  font-size: 45px;
+  font-family: Teachers, sans-serif;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
