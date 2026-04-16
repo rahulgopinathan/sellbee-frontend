@@ -26,14 +26,11 @@
   width: 350px;
 }
 
-.user-password-input:focus {
+.user-email-input .user-password-input:focus {
   outline: none;
   border-bottom: 1px solid rgb(230, 105, 16);
 }
-.user-email-input:focus {
-  outline: none;
-  border-bottom: 1px solid rgb(230, 105, 16);
-}
+
 .user-password-input {
   margin-bottom: 20px;
 }
