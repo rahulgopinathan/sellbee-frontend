@@ -7,7 +7,14 @@ function ListingItems() {
     <>
       <SideBar />
       <Header />
-      <main className="listing-main"></main>
+      <main className="listing-main">
+        <div className="listing-filters">
+          <button className="filter-btn">Books</button>
+          <button className="filter-btn">Calculator</button>
+          <button className="filter-btn">Pencil box</button>
+          <button className="filter-btn">Written notes</button>
+        </div>
+      </main>
     </>
   );
 }
