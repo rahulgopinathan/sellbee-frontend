@@ -1,7 +1,6 @@
 import SellByTextIcon from "../../shared/sellby-text-icon/SellbyTextIcon";
 import "./SideBar.css";
 import BottomBorderButton from "../../shared/bottom-border-button/bottomBorderButton";
-// import "../../shared/button-bottom-border/buttonBottomBorder.css";
 function SideBar() {
   return (
     <div className="sidebar-container">

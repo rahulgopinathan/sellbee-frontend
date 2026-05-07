@@ -1,3 +1,9 @@
+:root {
+  --color-primary: rgb(230, 105, 16);
+  --color-bg: rgb(253, 248, 242);
+  --color-bg-hover: rgb(253, 244, 233);
+}
+
 body {
   margin: 0;
 }

@@ -11,7 +11,7 @@ function LoginPageImages() {
       />
       <div className="app-icon-container">
         <img className="app-emoji" src={appIcon} alt="app icon" />
-        <p className="app-title">Campus market place for acadamic Essentials</p>
+        <p className="app-title">Campus market place for academic Essentials</p>
       </div>
     </div>
   );

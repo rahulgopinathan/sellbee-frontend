@@ -6,13 +6,22 @@ import SellByTextIcon from "../../shared/sellby-text-icon/SellbyTextIcon";
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
   async function handleLoginClick() {
-    const response = await axios.post("http://localhost:3001/auth/signin", {
-      email: "john.doe1@example.com",
-      password: "password123",
-    });
-    console.log(response);
+    setIsLoading(true);
+    setError("");
+    try {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/auth/signin`, {
+        email,
+        password,
+      });
+    } catch (err) {
+      setError(err.response?.data?.message ?? "Login failed. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -36,8 +45,10 @@ function LoginForm() {
         />
       </div>
 
-      <button onClick={handleLoginClick} className="login-btn">
-        Proceed
+      {error && <p className="login-error">{error}</p>}
+
+      <button onClick={handleLoginClick} className="login-btn" disabled={isLoading}>
+        {isLoading ? "Loading..." : "Proceed"}
       </button>
 
       <a
