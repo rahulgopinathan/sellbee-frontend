@@ -1,9 +1,14 @@
-import SideBar from "./SideBar";
+import Header from "./header/header";
+import SideBar from "./side-bar/SideBar";
+import "./listing.css";
+
 function ListingItems() {
   return (
-    <div className="sidebar-container">
+    <>
       <SideBar />
-    </div>
+      <Header />
+      <main className="listing-main"></main>
+    </>
   );
 }
 export default ListingItems;
