@@ -2,6 +2,7 @@ import "./LoginForm.css";
 import { useState } from "react";
 import axios from "axios";
 import SellByTextIcon from "../../shared/sellby-text-icon/SellbyTextIcon";
+import PillButton from "../../shared/pill-button/PillButton";
 
 function LoginForm() {
   const [email, setEmail] = useState("");
@@ -47,9 +48,12 @@ function LoginForm() {
 
       {error && <p className="login-error">{error}</p>}
 
-      <button onClick={handleLoginClick} className="login-btn" disabled={isLoading}>
-        {isLoading ? "Loading..." : "Proceed"}
-      </button>
+      <PillButton
+        text={isLoading ? "Loading..." : "Proceed"}
+        onClick={handleLoginClick}
+        disabled={isLoading}
+        className="login-pill-btn"
+      />
 
       <a
         className="terms-and-conditions-link"
